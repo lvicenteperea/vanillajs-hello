@@ -10,20 +10,44 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+    <script src="app.js"></script>
   </head>
   <body>
     <div class="container-fluid text-center">
+      <!--
       <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <img src="./assets/img/rigo-baby.jpg" />
+      <p class="alert alert-warning mt-4">If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error</p>
+      <script type="text/javascript">
+                
+          let posicion = Math.floor(Math.random()*3);
+          let d = new Date();
+          document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()+"</h1>" + 
+                                    "<h1>item:  " + posicion + "</h1>";
+      </script>
+
+      <p id="excuse">My dog eat my homework</p>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
+    -->
+      <script type="text/javascript">
+          function frase(){
+            let who = ['the dog','my granma','his turtle','my bird'];
+            let what = ['eat','pissed','crushed','broked'];
+            let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+
+            let posicion = Math.floor(Math.random()*4);
+
+            return who[posicion] + ' ' + what[posicion] + ' ' + when[posicion];
+          }
+
+
+          document.body.innerHTML = "<h1>Mi excusa:  " + frase() + "</h1>";
+      </script>
+
   </body>
 </html>
